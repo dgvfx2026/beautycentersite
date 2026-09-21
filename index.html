@@ -60,13 +60,10 @@
     .navbar-inner{display:flex;align-items:center;justify-content:space-between}
     .navbar-logo{display:flex;align-items:center;gap:12px}
     .logo-icon{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--rose),#A85C70);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1rem;font-weight:600;color:#fff;box-shadow:0 4px 16px rgba(200,116,138,.3)}
-    /* Real logo - valores calculados pixel a pixel (logo 400x400px, content 100-300x107-286px) */
-    /* NAVBAR: container 48x48px, mostra apenas o icone BC (sem texto Beauty Center) */
-    .logo-img-wrap{width:48px;height:48px;flex-shrink:0;overflow:hidden;position:relative}
-    .logo-img-wrap img{position:absolute;width:80px;height:auto;left:-16px;top:-10px}
-    /* FOOTER: container 56x56px, mostra logo completa (icone + Beauty Center) */
-    .logo-img-wrap--footer{width:56px;height:56px}
-    .logo-img-wrap--footer img{width:96px;left:-20px;top:-19px;filter:brightness(1.1)}
+    /* Logo pre-recortada - sem CSS de cropping, imagens ja ajustadas */
+    .logo-img-wrap{display:flex;align-items:center;flex-shrink:0}
+    .logo-img-wrap img{height:44px;width:auto;display:block}
+    .logo-img-wrap--footer img{height:52px;filter:brightness(1.08)}
     .logo-text{display:flex;flex-direction:column;line-height:1.1}
     .logo-text strong{font-family:var(--font-display);font-size:1rem;font-weight:800;color:var(--dark)}
     .logo-text span{font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--rose)}
@@ -382,7 +379,7 @@
   <div class="container">
     <div class="navbar-inner">
       <a href="#" class="navbar-logo">
-        <div class="logo-img-wrap"><img src="logo.png" alt="Beauty Center Max logo" /></div>
+        <div class="logo-img-wrap"><img src="logo-icon.png" alt="Beauty Center Max" /></div>
         <div class="logo-text">
           <strong>Beauty Center Max</strong>
           <span>Sal&atilde;o de Beleza</span>
@@ -634,7 +631,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo"><div class="logo-img-wrap logo-img-wrap--footer"><img src="logo.png" alt="Beauty Center Max logo" /></div><div class="logo-text"><strong>Beauty Center Max</strong><span>Sal&atilde;o de Beleza</span></div></div>
+        <div class="footer-logo"><div class="logo-img-wrap logo-img-wrap--footer"><img src="logo-full.png" alt="Beauty Center Max" /></div><div class="logo-text"><strong>Beauty Center Max</strong><span>Sal&atilde;o de Beleza</span></div></div>
         <p class="footer-desc">Transformando mulheres atrav&eacute;s de beleza, cuidado e amor pr&oacute;prio. Sua vers&atilde;o mais linda est&aacute; aqui, em Alvorada, RS.</p>
         <div class="social-links">
           <a href="https://www.instagram.com/beautycentermax/" target="_blank" class="social-link" aria-label="Instagram">&#128247;</a>
