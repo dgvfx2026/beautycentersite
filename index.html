@@ -60,12 +60,12 @@
     .navbar-inner{display:flex;align-items:center;justify-content:space-between}
     .navbar-logo{display:flex;align-items:center;gap:12px}
     .logo-icon{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--rose),#A85C70);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1rem;font-weight:600;color:#fff;box-shadow:0 4px 16px rgba(200,116,138,.3)}
-    /* Real logo - margin-crop approach */
-    .logo-img-wrap{width:60px;height:60px;overflow:hidden;flex-shrink:0;border-radius:6px}
-    .logo-img-wrap img{width:160%;height:auto;display:block;margin-left:-28%;margin-top:-7%;mix-blend-mode:multiply}
-    /* Footer: white badge so mark shows on dark bg */
-    .logo-img-wrap--footer{background:rgba(255,255,255,.97);border-radius:10px;padding:5px;box-shadow:0 2px 16px rgba(200,116,138,.2)}
-    .logo-img-wrap--footer img{mix-blend-mode:normal}
+    /* Real logo - transparent PNG, no tricks needed */
+    .logo-img-wrap{height:52px;width:52px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .logo-img-wrap img{width:220%;height:auto;display:block;margin-left:-60%;margin-top:-18%;object-fit:contain}
+    /* Footer version - slightly larger, show full logo */
+    .logo-img-wrap--footer{height:60px;width:60px;opacity:.92}
+    .logo-img-wrap--footer img{width:220%;margin-left:-60%;margin-top:-18%;filter:brightness(1.15)}
     .logo-text{display:flex;flex-direction:column;line-height:1.1}
     .logo-text strong{font-family:var(--font-display);font-size:1rem;font-weight:800;color:var(--dark)}
     .logo-text span{font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--rose)}
